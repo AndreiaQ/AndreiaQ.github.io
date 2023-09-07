@@ -1,0 +1,530 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do header */
+header {
+    background-color: white;
+    color: #ffffff;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(189,83,93);
+}
+
+/* Estilo para centralizar o título */
+.header-title {
+    flex-grow: 1;
+    text-align: left;
+    color: black;
+}
+
+.header-title a{
+    color: black;
+    text-decoration: none;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.light-text {
+    font-weight: lighter;
+}
+
+.hamburguer{
+    display: none ;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out ;
+    transition: all 0.3s ease-in-out ;
+    background: black;
+}
+
+/* Estilo para centralizar o texto no corpo */
+.center-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+}
+
+main{
+    background-color: #dcccc4;
+    height: auto; /* Ajuste a altura conforme necessário */
+    overflow-x: hidden; /* Evita a rolagem horizontal */
+}
+
+.titulo-principal{
+    position: relative;
+    font-family: 'Quicksand',sans-serif;
+    margin-left: 45%;
+    padding-top: 20px;
+    font-size: 50px;
+}
+
+
+.formacao {
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    left: -10%; /* Ajuste conforme necessário */
+    top: -20px; /* Use uma unidade de medida absoluta, como pixels */
+    margin-top: 20px; /* Ajuste conforme necessário para manter o alinhamento */
+    margin-left: 35%; /* Ajuste conforme necessário para manter o alinhamento */
+}
+
+.retangulo {
+    position: relative;
+    width: 70%;
+    min-width: 300px;
+    height: 40vh;
+    max-width: 700px;
+    background-color: white;
+    top: -5px;
+    left: 25%;
+    max-height: 300px;
+    overflow: hidden;
+    box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+}
+
+
+.info {
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 50px;
+    margin-top: 20px;
+    padding-top: 25px;
+    text-align: left;
+}
+
+.info h1 {
+    color: #4f1b21;
+    margin-bottom: 5px; /* Ajuste o valor conforme necessário */
+}
+
+.info h2 {
+    font-weight: lighter;
+    margin-top: -10px; /* Ajuste o valor conforme necessário */
+}
+
+.info h3 {
+    font-weight: lighter;
+    margin-bottom: 75px;
+}
+
+.info h2,
+.info h3 {
+    margin-bottom: 15px; /* Ajuste o valor conforme necessário */
+}
+
+.info .licenciatura{
+    margin-bottom: 15px;
+}
+
+.descricao-formacao {
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.5;
+    font-size: small;
+    margin-left: 250px;
+    margin-top: -160px;
+    margin-bottom: 10px;
+    max-height: 300px; /* Ajuste a altura máxima conforme necessário */
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+
+
+.descricao-formacao h3{
+    font-weight: lighter;
+    padding-right: 30px;
+    
+   
+}
+
+.titulos {
+    /* Alinhe com o retângulo de formação */
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    left: 25%;
+    top: 20px; /* Ajuste conforme necessário */
+}
+
+.retangulo2 {
+    position: relative;
+    width: 70%;
+    min-width: 300px;
+    height: 40vh;
+    max-width: 700px;
+    background-color: white;
+    top: 40px;
+    left: 25%;
+    max-height: 300px;
+    overflow: hidden;
+    box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+}
+
+.retangulo2 ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    list-style:disc;
+    padding: 0; /* Remover o preenchimento padrão da lista */
+    columns: 2; /* Dividir em duas colunas */
+    column-gap: 5px;
+    padding-right: 100px;
+    padding-left: -1000px;
+    padding-top: 30px;
+
+}
+
+.retangulo2 ul li {
+    margin-bottom: 5px; 
+    margin-left: 100px;
+    margin-top: 5px;
+   
+}
+.retangulo2 ul img {
+    margin-right: 20px; 
+    vertical-align:middle; /* Alinha verticalmente as imagens ao texto */
+}
+
+.titulo3{
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    left: -10%; /* Ajuste conforme necessário */
+    top: 50px; /* Use uma unidade de medida absoluta, como pixels */
+    margin-top: 20px; /* Ajuste conforme necessário para manter o alinhamento */
+    margin-left: 35%; /* Ajuste conforme necessário para manter o alinhamento */
+    
+}
+
+.retangulo3 {
+    position: relative;
+    width: 70%;
+    min-width: 300px;
+    height: 40vh;
+    max-width: 700px;
+    background-color: white;
+    top: 70px;
+    left: 25%;
+    max-height: 300px;
+    overflow: hidden;
+    box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    margin-bottom: 150px;
+
+}
+.retangulo3 ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    padding: 0; /* Remover o preenchimento padrão da lista */
+    columns: 2; /* Dividir em duas colunas */
+    column-gap: 5px;
+    padding-right: 10px;
+    padding-top: 50px;
+
+}
+
+.retangulo3 ul li {
+    margin-bottom: 20px; 
+    margin-left: 50px;
+    margin-top: 10px;
+   
+}
+
+
+.footer {
+    background-color: white; /* Cor de fundo branca */
+    color: #666; /* Cor do texto do footer */
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Alinhar os itens nas extremidades */
+    align-items: center; /* Centralizar verticalmente os itens */
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+}
+
+.footer-info h3 {
+    font-size: 16px;
+    margin: 0 10px 0 0; /* Espaçamento à direita */
+}
+
+.footer-info p {
+    font-size: 14px;
+    margin: 0;
+    margin-right:15px;
+}
+
+@media (max-width: 768px)
+{
+    .hamburguer{
+        display: block;
+    }
+
+ 
+
+    .hamburguer.active .bar:nth-child(2)
+    {
+        opacity:0 ;
+    }
+
+    
+    .hamburguer.active .bar:nth-child(1)
+    {
+    transform: translateY(8px) rotate(45deg) ;
+    }
+
+      
+    .hamburguer.active .bar:nth-child(3)
+    {
+    transform: translateY(-8px) rotate(-45deg) ;
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 120px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #dcccc4;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+
+  .nav-menu li {
+    font-size: 25px;
+    margin-top: 100px;
+    margin-bottom: -50px;
+  }
+
+    .nav-menu.active{
+        left: 0;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    
+.titulo-principal{
+    position: relative;
+    font-family: 'Quicksand',sans-serif;
+    margin-left: 35%;
+    padding-top: 20px;
+    font-size: 50px;
+}
+    
+    .retangulo {
+        position: relative;
+        width: 50%; /* Largura menor */
+        min-width: 200px; /* Largura mínima menor */
+        height: 51vh; /* Altura maior */
+        max-width: none; /* Remova a largura máxima */
+        max-height: none; /* Remova a altura máxima */
+        overflow: hidden;
+        box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    }
+
+    .descricao-formacao {
+        text-align: left;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 1.5;
+        font-size: small;
+        margin-top: 10px; /* Adicione um espaçamento superior */
+        max-height: 300px; /* Ajuste a altura máxima conforme necessário */
+        overflow: auto;
+        text-overflow: ellipsis;
+        margin-left: 50px;
+    }
+
+    .retangulo2 {
+        position: relative;
+        width: 50%; /* Largura menor */
+        min-width: 200px; /* Largura mínima menor */
+        height: 30vh; /* Altura maior */
+        max-width: none; /* Remova a largura máxima */
+        max-height: none; /* Remova a altura máxima */
+        overflow: hidden;
+        box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    }
+
+
+.retangulo2 ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    list-style:disc;
+    padding: 0; /* Remover o preenchimento padrão da lista */
+    columns: 2; /* Dividir em duas colunas */
+    column-gap: 5px;
+    padding-right: 30px;
+    padding-left: -1000px;
+    padding-top: 30px;
+
+}
+
+.retangulo2 ul li {
+    margin-bottom: 5px; 
+    margin-left: 70px;
+    margin-top: 5px;
+   
+}
+
+.retangulo3 {
+    position: relative;
+    width: 50%; /* Largura menor */
+    min-width: 200px; /* Largura mínima menor */
+    height: 40vh; /* Altura maior */
+    max-width: none; /* Remova a largura máxima */
+    max-height: none; /* Remova a altura máxima */
+    overflow-y: auto;
+    box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+}
+
+.retangulo3 ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    padding: 0; /* Remover o preenchimento padrão da lista */
+    columns: 1; /* Dividir em duas colunas */
+    column-gap: 5px;
+    padding-right: 10px;
+    padding-top: 30px;
+
+}
+
+.retangulo3 ul li {
+    margin-bottom: 15px; 
+    margin-left: 50px;
+    margin-top: 1px;
+   
+}
+
+}
+
+@media only screen and (max-width: 500px){
+    
+    .retangulo {
+        position: relative;
+        width: 70%; /* Largura menor */
+        min-width: 200px; /* Largura mínima menor */
+        height: 51vh; /* Altura maior */
+        max-width: none; /* Remova a largura máxima */
+        max-height: none; /* Remova a altura máxima */
+        overflow: hidden;
+        margin-left: -5%;
+        box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    }
+
+    .descricao-formacao {
+        text-align: left;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 1.5;
+        font-size: small;
+        margin-top: 10px; /* Adicione um espaçamento superior */
+        max-height: 300px; /* Ajuste a altura máxima conforme necessário */
+        overflow: auto;
+        text-overflow: ellipsis;
+        margin-left: 50px;
+    }
+    .retangulo2 {
+        position: relative;
+        width: 70%; /* Largura menor */
+        min-width: 200px; /* Largura mínima menor */
+        height: 45vh; /* Altura maior */
+        max-width: none; /* Remova a largura máxima */
+        max-height: none; /* Remova a altura máxima */
+        overflow-y: auto;
+        margin-left: -5%;
+        box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    }
+
+
+.retangulo2 ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    list-style:disc;
+    padding: 0; /* Remover o preenchimento padrão da lista */
+    columns: 1; /* Dividir em duas colunas */
+    column-gap: 5px;
+    padding-right: 30px;
+    padding-left: -1000px;
+    padding-top: 3px;
+
+}
+
+.retangulo2 ul li {
+    margin-bottom: 5px; 
+    margin-left: 70px;
+    margin-top: 5px;
+   
+}
+
+
+.retangulo3 {
+    position: relative;
+    width: 70%; /* Largura menor */
+    min-width: 200px; /* Largura mínima menor */
+    height: 45vh; /* Altura maior */
+    max-width: none; /* Remova a largura máxima */
+    max-height: none; /* Remova a altura máxima */
+    overflow-y: auto;
+    margin-left: -5%;
+    box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+}
+
+.retangulo3 ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    padding: 0; /* Remover o preenchimento padrão da lista */
+    columns: 1; /* Dividir em duas colunas */
+    column-gap: 5px;
+    padding-right: 10px;
+    padding-top: 20px;
+
+}
+
+.retangulo3 ul li {
+    margin-bottom: 15px; 
+    margin-left: 50px;
+    margin-top: 1px;
+   
+}
+
+}
