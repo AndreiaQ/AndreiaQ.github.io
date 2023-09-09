@@ -81,12 +81,15 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 40px;
+    padding: 10px 40px;
     background: #ffffff;
     max-width: 30%; /* Largura máxima do formulário */
     box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
     margin: 20px auto; /* Centraliza o formulário */
     border-radius: 10px;
+    max-height: 80%; /* Defina a altura máxima desejada */
+    overflow-y: auto; 
+    margin-top: 15%;
 }
 
 section h2{
@@ -222,17 +225,22 @@ form button:hover{
         left: 0;
 
     }
+
+    section{
+        margin-top: 20%;
+    }
 }
 
 @media only screen and (min-width: 600px) {
     section {
       max-width: 50%;
+      margin-top: 20%;
     }
 }
 
 @media only screen and (max-width: 600px) {
     section {
         max-width: 95%;
-       
+        margin-top: 50%;
       }
 }
