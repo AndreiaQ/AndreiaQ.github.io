@@ -13,6 +13,10 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
+    position: fixed; /* Manter o header fixo */
+    top: 0; /* Fixar o header no topo */
+    width: 100%; /* Cobrir toda a largura da tela */
+    z-index: 999;
 }
 
 nav ul {
@@ -440,11 +444,19 @@ main{
 
 @media only screen and (max-width: 500px){
     
+    
+ .titulo-principal {
+        position: relative;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center; /* Centralizar o texto horizontalmente */
+        font-size: 50px;
+        margin: 20px auto; /* Margens automáticas para centralizar verticalmente */
+    }
     .retangulo {
         position: relative;
         width: 70%; /* Largura menor */
         min-width: 200px; /* Largura mínima menor */
-        height: 51vh; /* Altura maior */
+        height: 60vh; /* Altura maior */
         max-width: none; /* Remova a largura máxima */
         max-height: none; /* Remova a altura máxima */
         overflow: hidden;
@@ -467,7 +479,7 @@ main{
         position: relative;
         width: 70%; /* Largura menor */
         min-width: 200px; /* Largura mínima menor */
-        height: 45vh; /* Altura maior */
+        height: 60vh; /* Altura maior */
         max-width: none; /* Remova a largura máxima */
         max-height: none; /* Remova a altura máxima */
         overflow-y: auto;
@@ -485,7 +497,7 @@ main{
     column-gap: 5px;
     padding-right: 30px;
     padding-left: -1000px;
-    padding-top: 3px;
+    padding-top: 30px;
 
 }
 
@@ -501,7 +513,7 @@ main{
     position: relative;
     width: 70%; /* Largura menor */
     min-width: 200px; /* Largura mínima menor */
-    height: 45vh; /* Altura maior */
+    height: 50vh; /* Altura maior */
     max-width: none; /* Remova a largura máxima */
     max-height: none; /* Remova a altura máxima */
     overflow-y: auto;
@@ -516,15 +528,115 @@ main{
     columns: 1; /* Dividir em duas colunas */
     column-gap: 5px;
     padding-right: 10px;
-    padding-top: 20px;
+    padding-top: 40px;
 
 }
 
 .retangulo3 ul li {
-    margin-bottom: 15px; 
+    margin-bottom: 20px; 
     margin-left: 50px;
     margin-top: 1px;
    
 }
+
+}
+
+@media only screen and (max-width: 380px){
+
+    .retangulo {
+        position: relative;
+        width: 80%; /* Largura menor */
+        min-width: 200px; /* Largura mínima menor */
+        height: 80vh; /* Altura maior */
+        max-width: none; /* Remova a largura máxima */
+        max-height: none; /* Remova a altura máxima */
+        margin-left: -15%;
+        box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    }
+    
+    .descricao-formacao {
+        text-align: left;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 1.5;
+        font-size: small;
+        margin-top: 10px; /* Adicione um espaçamento superior */
+        overflow: auto; /* Adicione overflow: auto; para permitir rolagem */
+        margin-left: 50px;
+    }
+
+    .titulos {
+        /* Alinhe com o retângulo de formação */
+        position: relative;
+        font-family: 'Quicksand', sans-serif;
+        left: 20%;
+        top: 20px; /* Ajuste conforme necessário */
+    }
+
+    .retangulo2 {
+        position: relative;
+        width: 80%; /* Largura menor */
+        min-width: 200px; /* Largura mínima menor */
+        height: 80vh; /* Altura maior */
+        max-width: none; /* Remova a largura máxima */
+        max-height: none; /* Remova a altura máxima */
+        overflow-y: auto;
+        margin-left: -15%;
+        box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    }
+
+    
+.retangulo2 ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    list-style:disc;
+    padding: 0; /* Remover o preenchimento padrão da lista */
+    columns: 1; /* Dividir em duas colunas */
+    column-gap: 5px;
+    padding-right: 30px;
+    padding-left: -1000px;
+    padding-top: 40px;
+
+}
+
+.titulo3{
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    left: -15%; /* Ajuste conforme necessário */
+    top: 50px; /* Use uma unidade de medida absoluta, como pixels */
+    margin-top: 20px; /* Ajuste conforme necessário para manter o alinhamento */
+    margin-left: 35%; /* Ajuste conforme necessário para manter o alinhamento */
+    
+}
+
+.retangulo3 {
+    position: relative;
+    width: 80%; /* Largura menor */
+    min-width: 200px; /* Largura mínima menor */
+    height: 80vh; /* Altura maior */
+    max-width: none; /* Remova a largura máxima */
+    max-height: none; /* Remova a altura máxima */
+    overflow-y: auto;
+    margin-left: -15%;
+    box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+}
+
+.retangulo3 ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    padding: 0; /* Remover o preenchimento padrão da lista */
+    columns: 1; /* Dividir em duas colunas */
+    column-gap: 5px;
+    padding-right: 10px;
+    padding-top: 40px;
+
+}
+
+.retangulo3 ul li {
+    margin-bottom: 25px; 
+    margin-left: 50px;
+    margin-top: 15px;
+   
+}
+
 
 }

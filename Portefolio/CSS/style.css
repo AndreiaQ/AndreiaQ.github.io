@@ -14,6 +14,10 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
+    position: fixed; /* Manter o header fixo */
+    top: 0; /* Fixar o header no topo */
+    width: 100%; /* Cobrir toda a largura da tela */
+    z-index: 999;
 }
 
 nav ul {
@@ -270,6 +274,8 @@ nav a:hover {
     transform: translateY(-8px) rotate(-45deg) ;
     }
 
+
+    
     .nav-menu{
         position: fixed;
         left: -100%;
@@ -281,6 +287,7 @@ nav a:hover {
         height: 100%;
         text-align: center;
         transition: 0.3s;
+        z-index: 1000;
     }
 
   .nav-menu li {
@@ -291,8 +298,9 @@ nav a:hover {
 
     .nav-menu.active{
         left: 0;
-
     }
+
+
 
     .background-container {
         display: flex;
@@ -371,8 +379,71 @@ nav a:hover {
 .descricao{
      margin-left: 25%;
 }
-
-
-
 }
 
+
+@media only screen and (max-width: 390px) {
+
+    .rectangle {
+        width: 350px;
+        height: 450px;
+        background-color: #f8ece4; /* Cor branca */
+        position: absolute;
+        top: 130%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    }
+
+    .text-info {
+        width: 100%; /* Defina a largura desejada ou deixe como 100% para ocupar toda a largura disponível */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 1%;
+        margin-top: 120%;
+    
+    }
+
+    .text-info h1{
+        font-size: 90px;
+        margin-top: 30%;
+        margin-left: -30%;
+    }
+
+    .text-info h2{
+        font-size: 20px;
+        margin-top: -5%;
+        margin-left: -25%;
+    }
+
+    .text-info p{
+        font-size: 14px;
+        margin-left: 10%;
+    }
+
+
+    .btn-curriculo,
+.btn-projeto {
+    display: inline-block; /* Tornar os botões em linha */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    padding: 12px 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #4f1b21;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid transparent;
+    border-color: #4f1b21;
+    text-align: center; /* Centralizar o texto nos botões */
+    margin-left: -30%; /* Adicionar margem esquerda para espaçamento */
+}
+
+
+   
+}

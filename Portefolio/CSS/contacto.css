@@ -12,6 +12,10 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
+    position: fixed; /* Manter o header fixo */
+    top: 0; /* Fixar o header no topo */
+    width: 100%; /* Cobrir toda a largura da tela */
+    z-index: 999;
 }
 
 nav ul {

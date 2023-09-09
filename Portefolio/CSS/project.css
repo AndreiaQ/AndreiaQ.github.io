@@ -13,6 +13,10 @@ header {
     justify-content: space-between;
     align-items: center;
     font-family: 'Quicksand', sans-serif;
+    position: fixed; /* Manter o header fixo */
+    top: 0; /* Fixar o header no topo */
+    width: 100%; /* Cobrir toda a largura da tela */
+    z-index: 999;
 }
 
 nav ul {
@@ -92,7 +96,7 @@ nav a:hover {
     font-weight: lighter;
     margin-top: -450px;
     margin-left: -45%; /* Ajuste conforme necessário */
-    margin-right: 10%; /* Ajuste conforme necessário */
+    margin-right: 5%; /* Ajuste conforme necessário */
     text-align: center;
     max-height: 15%; /* Limitar a largura máxima para evitar aumento de altura */
     margin-bottom: 20px;
@@ -254,6 +258,7 @@ nav a:hover {
 
     }
 
+ 
 
     .background-container {
         display: flex;
@@ -327,8 +332,8 @@ nav a:hover {
     }
 
     .background-container h3{
-        margin-right: 30%;
-        margin-top: -75%;
+        margin-right: 20%;
+        margin-top: -90%;
         font-size: 15px;
         max-width: 120%;
         max-height: 30vh;
@@ -349,12 +354,13 @@ nav a:hover {
     }
 
     .retangulo img {
-        width: 100%;
-        height: auto;
+        width: 100%; /* A imagem ocupa 100% da largura do retângulo */
+        height: auto; /* A altura é ajustada automaticamente para manter a proporção */
         position: absolute;
-        margin-right: 0px;
-        margin-left: 0px;
-        margin-top: 355px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin-top: 110%;
     }
 
     .descricao {
