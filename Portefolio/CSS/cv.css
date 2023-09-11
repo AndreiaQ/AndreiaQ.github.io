@@ -92,8 +92,8 @@ main{
 .titulo-principal{
     position: relative;
     font-family: 'Quicksand',sans-serif;
-    margin-left: 45%;
-    padding-top: 20px;
+    margin-left: 40%;
+    padding-top: 120px;
     font-size: 50px;
 }
 
@@ -321,7 +321,7 @@ main{
     .nav-menu{
         position: fixed;
         left: -100%;
-        top: 120px;
+        top: 90px;
         gap: 0;
         flex-direction: column;
         background-color: #dcccc4;
@@ -352,7 +352,7 @@ main{
     position: relative;
     font-family: 'Quicksand',sans-serif;
     margin-left: 35%;
-    padding-top: 20px;
+    padding-top: 120px;
     font-size: 50px;
 }
     

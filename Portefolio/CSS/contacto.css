@@ -89,7 +89,7 @@ section {
     border-radius: 10px;
     max-height: 80%; /* Defina a altura máxima desejada */
     overflow-y: auto; 
-    margin-top: 15%;
+    margin-top: 100px;
 }
 
 section h2{
@@ -226,21 +226,23 @@ form button:hover{
 
     }
 
-    section{
-        margin-top: 20%;
+    .section{
+        margin-top:100px ;
     }
+  
 }
 
 @media only screen and (min-width: 600px) {
     section {
       max-width: 50%;
-      margin-top: 20%;
+        margin-top:100px ;
     }
+    
 }
 
 @media only screen and (max-width: 600px) {
     section {
         max-width: 95%;
-        margin-top: 50%;
+        margin-top:130px ;
       }
 }

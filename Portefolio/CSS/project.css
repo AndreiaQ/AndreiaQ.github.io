@@ -85,7 +85,7 @@ nav a:hover {
 
 .background-container h1{
     font-family: 'Quicksand', sans-serif;
-    margin-top: -600px;
+    margin-top: -450px;
     margin-left: 45%;
     font-weight: bolder;
     font-size: 35px;
@@ -94,7 +94,7 @@ nav a:hover {
 .background-container h3{
     font-family: 'Quicksand', sans-serif;
     font-weight: lighter;
-    margin-top: -450px;
+    margin-top: -300px;
     margin-left: -45%; /* Ajuste conforme necessário */
     margin-right: 5%; /* Ajuste conforme necessário */
     text-align: center;
@@ -112,7 +112,7 @@ nav a:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 200px;
-    margin-top: -500px; /* Ajustar o deslocamento vertical */
+    margin-top: -450px; /* Ajustar o deslocamento vertical */
     box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
 }
 
@@ -269,6 +269,14 @@ nav a:hover {
         text-align: center;
     }
 
+    .background-container h1{
+        margin-top: -400px;
+    }
+
+    .background-container h3{
+        margin-top: -210px;
+    }
+
     .retangulo {
         position: relative;
         width: 90%; /* 90% da largura da tela */
@@ -276,9 +284,9 @@ nav a:hover {
         height: 680px; /* 40% da altura da tela */
         background-color: white;
         top: 10px;
-        margin-left: 35%;
+        margin-left: 30%;
         margin-bottom: 100px;
-        margin-top: -450px; /* Ajustar o deslocamento vertical */
+        margin-top: -350px; /* Ajustar o deslocamento vertical */
         box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
     }
 
@@ -328,16 +336,15 @@ nav a:hover {
 @media only screen and (max-width: 600px) {
     
     .background-container h1{
-        margin-left: 30%;
+       margin-left: 35%;
+        margin-top: -300px;
     }
 
     .background-container h3{
-        margin-right: 20%;
-        margin-top: -90%;
-        font-size: 15px;
-        max-width: 120%;
-        max-height: 30vh;
-        overflow:scroll;
+        margin-left: -60%;
+        margin-top: -70px;
+        font-size: 13px;
+       
     }
     
     .retangulo {
